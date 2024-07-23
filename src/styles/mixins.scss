@@ -1,0 +1,42 @@
+/** 清除浮動 */
+%clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/** 美化原生滾動條 */
+%scrollbar {
+  // 整個滾動條
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  // 滾動條上的滾動滑塊
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #90939955;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #90939977;
+  }
+  &::-webkit-scrollbar-thumb:active {
+    background-color: #90939999;
+  }
+  // 當同時有垂直滾動條和水平滾動條時交匯的部分
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+}
+
+/** 文字溢出時顯示省略號 */
+%ellipsis {
+  // 隱藏溢出的文字
+  overflow: hidden;
+  // 防止文字換行
+  white-space: nowrap;
+  // 文字內容溢出容器時，文字末尾顯示省略號
+  text-overflow: ellipsis;
+}

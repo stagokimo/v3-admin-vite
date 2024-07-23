@@ -1,0 +1,16 @@
+{
+  "Vue3 Hook 程式碼結構一鍵產生": {
+    "prefix": "Vue3 Hook",
+    "body": [
+      "import { ref } from \"vue\"\n",
+      "const refName1 = ref<string>(\"這是一個響應式變數\")\n",
+      "export function useHookName() {",
+      "\tconst refName2 = ref<string>(\"這是一個響應式變數\")\n",
+      "\tconst fnName = () => {}\n",
+      "\treturn { refName1, refName2, fnName }",
+      "}",
+      "$1"
+    ],
+    "description": "Vue3 Hook"
+  }
+}

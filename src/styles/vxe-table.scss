@@ -1,0 +1,38 @@
+/** 自定義 Vxe Table 樣式 */
+
+.vxe-grid {
+  // 表單
+  &--form-wrapper {
+    .vxe-form {
+      padding: 10px 20px !important;
+      margin-bottom: 20px !important;
+    }
+  }
+
+  // 工具欄
+  &--toolbar-wrapper {
+    .vxe-toolbar {
+      padding: 20px !important;
+    }
+  }
+
+  // 分頁
+  &--pager-wrapper {
+    .vxe-pager {
+      height: 70px !important;
+      padding: 0 20px !important;
+      &--wrapper {
+        // 參考 Bootstrap 的響應式設計 WIDTH = 768
+        @media screen and (max-width: 768px) {
+          .vxe-pager--total,
+          .vxe-pager--sizes,
+          .vxe-pager--jump,
+          .vxe-pager--jump-prev,
+          .vxe-pager--jump-next {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+}

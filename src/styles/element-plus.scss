@@ -1,0 +1,20 @@
+/** 自定義 Element Plus 樣式 */
+
+// 卡片
+.el-card {
+  background-color: var(--el-bg-color);
+}
+
+// 分頁
+.el-pagination {
+  // 參考 Bootstrap 的響應式設計 WIDTH = 768
+  @media screen and (max-width: 768px) {
+    .el-pagination__total,
+    .el-pagination__sizes,
+    .el-pagination__jump,
+    .btn-prev,
+    .btn-next {
+      display: none !important;
+    }
+  }
+}
